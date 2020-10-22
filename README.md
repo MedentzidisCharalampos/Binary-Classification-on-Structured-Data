@@ -22,8 +22,8 @@ The Keras preprocessing layers API allows you to build Keras-native input proces
  
  1. All Features Layer: A Layer where both numerical and categorical columns are combined.
  2. Dense Layer: A Fully Connected Layer with 32-units and Relu activation function
- 3. Dropout: With propability of 0.5.
- 4 Dense Layer: A Fully Connected Layer with 1-unit and Relu activation function
+ 3. Dropout: With propability of 0.5.  
+ 4 Dense Layer: A Fully Connected Layer with 1-unit and Relu activation function.  
  
 ![alt text](https://github.com/MedentzidisCharalampos/Binary-Classification-on-Structured-Data/blob/main/connectivity_graph.png)
 
