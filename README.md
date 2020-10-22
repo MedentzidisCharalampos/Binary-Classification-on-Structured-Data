@@ -40,4 +40,4 @@ The model is :
 2. Wrap scalars into a list so as to have a batch dimension.
 3. Each feature is converted to tensor.
 
-The result is: `This particular pet had a 83.4 percent probability of getting adopted`.
+The Prediction is: `This particular pet had a 83.4 percent probability of getting adopted`.
