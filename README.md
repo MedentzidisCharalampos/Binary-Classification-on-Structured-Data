@@ -6,12 +6,6 @@ We use PetFinder dataset and want to predict whether the pet was adopted, or not
  We use the PetFinder dataset (https://www.kaggle.com/c/petfinder-adoption-prediction).Each row describes a pet, and each column describes an attribute. We use this information to predict if the pet will be adopted.
  
  # Data Preprocessing
-The Keras preprocessing layers API allows you to build Keras-native input processing pipelines.   
-1. Normalization - Feature-wise normalization of the data.
-2. CategoryEncoding - Category encoding layer.
-3. StringLookup - Maps strings from a vocabulary to integer indices.
-4. IntegerLookup - Maps integers from a vocabulary to integer indices.  
-
 1. Numeric columns:
  For each of the Numeric feature, we use a Normalization() layer to make sure the mean of each feature is 0 and its standard deviation is 1.
 2. Categorical columns:  
