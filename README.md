@@ -17,6 +17,7 @@ The Keras preprocessing layers API allows you to build Keras-native input proces
  In this dataset, Type is represented as a string (e.g. 'Dog', or 'Cat'). The strings are converted to integer indices. Then, the integer indices are converted to one-hot encoding.  
  
  The Numeric and Categorical Columns are concatenated into a single Layer and then they fed into to network.
+ 
  # Architecture of the Model
  
  1. All Features Layer: A Layer where both numerical and categorical columns are combined.
@@ -26,7 +27,17 @@ The Keras preprocessing layers API allows you to build Keras-native input proces
  
 ![alt text](https://github.com/MedentzidisCharalampos/Binary-Classification-on-Structured-Data/blob/main/connectivity_graph.png)
 
-The model is :
- 1: Compiled with BinaryCrossentropy as Loss function  and Adam as optimizer.  
- 2. Trained for 10 epochs and the results:  loss: 0.5358 - accuracy: 0.7139 - val_loss: 0.5067 - val_accuracy: 0.7546.
- 3. Evaluated on Test Data and the results: loss: 0.5143 - accuracy: 0.7439 
+# Compile and Train the Model
+
+The model is :  
+ 1: Compiled with BinaryCrossentropy as Loss function  and Adam as optimizer.    
+ 2. Trained for 10 epochs and the results:  `loss: 0.5358 - accuracy: 0.7139 - val_loss: 0.5067 - val_accuracy: 0.7546`.  
+ 3. Evaluated on Test Data and the results: `loss: 0.5143 - accuracy: 0.7439`.  
+ 
+# Inference on new data
+ 
+1. Save and reload the model.
+2. Wrap scalars into a list so as to have a batch dimension.
+3. Each feature is converted to tensor.
+
+The result is: `This particular pet had a 83.4 percent probability of getting adopted`.
