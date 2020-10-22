@@ -11,12 +11,11 @@ The Keras preprocessing layers API allows you to build Keras-native input proces
 2. CategoryEncoding - Category encoding layer.
 3. StringLookup - Maps strings from a vocabulary to integer indices.
 4. IntegerLookup - Maps integers from a vocabulary to integer indices.
- # Numeric columns
- For each of the Numeric feature, you will use a Normalization() layer to make sure the mean of each feature is 0 and its standard deviation is 1.
- # Categorical columns
- In this dataset, Type is represented as a string (e.g. 'Dog', or 'Cat'). The strings are converted to integer indices. Then, the integer indices are converted to one-hot encoding.  
- 
- The Numeric and Categorical Columns are concatenated into a single Layer and then they fed into to network.
+Numeric columns:
+ For each of the Numeric feature, we use a Normalization() layer to make sure the mean of each feature is 0 and its standard deviation is 1.
+Categorical columns:  
+ In this dataset, Type is represented as a string (e.g. 'Dog', or 'Cat'). The strings are converted to integer indices. Then, the integer indices are converted to one-hot encoding.    
+ The Numeric and Categorical Columns are concatenated into a single Layer and then they fed into to network.  
  
  # Architecture of the Model
  
