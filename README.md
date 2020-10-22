@@ -6,7 +6,7 @@ We use PetFinder dataset and want to predict whether the pet was adopted, or not
  We use the PetFinder dataset (https://www.kaggle.com/c/petfinder-adoption-prediction).Each row describes a pet, and each column describes an attribute. We use this information to predict if the pet will be adopted.
  
  # Data Preprocessing
-1. Numeric columns:
+1. Numeric columns:  
  For each of the Numeric feature, we use a Normalization() layer to make sure the mean of each feature is 0 and its standard deviation is 1.
 2. Categorical columns:  
  In this dataset, Type is represented as a string (e.g. 'Dog', or 'Cat'). The strings are converted to integer indices. Then, the integer indices are converted to one-hot encoding.    
